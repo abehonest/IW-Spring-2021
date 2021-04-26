@@ -2,13 +2,13 @@
 
 ## Personal Information
 
-- **Name:** YOUR ANSWER HERE
-- **NetID:** YOUR ANSWER HERE
-- **Major** YOUR ANSWER HERE
-- **Class Year:** YOUR ANSWER HERE
-- **Operating System:** YOUR ANSWER HERE
-- **Python Experience [1-10]:** YOUR ANSWER HERE
-- **Algorithms Experience [1-10]:** YOUR ANSWER HERE
+- **Name:** David Booth
+- **NetID:** dbooth
+- **Major** ECE
+- **Class Year:** 2022
+- **Operating System:** Windows
+- **Python Experience [1-10]:** 5
+- **Algorithms Experience [1-10]:** 6
 
 ## Write-up Questions
 
@@ -16,13 +16,18 @@
 
 How would you describe the behavior of the depth-first search algorithm? In what order does it traverse the graph? What happens when some nodes are blocked off?
 
-YOUR ANSWER HERE
+When I don't block anything it almost seems like it's building up its search horizontally, completing a horizontal row then going up by one until it finishes.
+It seems like it's going down individual 'paths' until they terminate before going on to the next individual path, but it runs so fast it's honestly hard to tell.
+Also, in BFS I saw there was a red and blue square.  In DFS I only see the red square and not the blue, I assume destination, square.
 
 **Question 2:**
 
 How would you describe the behavior of the breadth-first search algorithm? In what order does it traverse the graph? What happens when some nodes are blocked off?
 
-YOUR ANSWER HERE
+It seems to traverse all passages at the same time, unlike DFS which would only check a single passage at a time.  Without nodes blocked off it almost goes out like a wave up
+to the red square.  It seems that the traversal order is less dependent on however many nodes are around a given node and more dependent on where you are in the entire cycle
+of traversal - that didn't make much sense but what I mean is that it seems like where DFS did its own thing and didn's seem to care about where you were at in terms of 
+your general search (it would just ping off down some small passage and forget about the rest for a while) BFS seems to pay equal attention to all passages.
 
 **BONUS:**
 
@@ -51,4 +56,9 @@ YOUR ANSWER HERE
 
 What would you change about the assignment? Were there any points in particular that seemed confusing? Did you need outside help at any point?
 
-YOUR ANSWER HERE
+I would love if the visualizer also displayed basic controls for itself.  It would also be nice to have it either run slower or give the user control
+over its speed.  Also, it would be nice to just have a button to reset it instead of having to back out of it and restart it in the terminal each time.
+
+I'm surprised that the visualizer doesn't show us how our changes effect the algorithm when it runs.  I had a mistake in my dfs algorithm and it kept telling
+me I had a mistake, but the visualizer seemed to be working fine so I was confused until I saw that the visualizer would run fine no matter what.  I think
+the visualizer should respond to whatever changes people make to their algorithms.
