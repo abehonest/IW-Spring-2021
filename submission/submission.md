@@ -39,10 +39,10 @@ YOUR ANSWER HERE
 
 ### Quick Feedback
 
-- **Length of Assignment (# Hours):** YOUR ANSWER HERE
-- **Quality of Instructions [1-10]:** YOUR ANSWER HERE
-- **Quality of Visualizer [1-10]:** YOUR ANSWER HERE
-- **Overall Rating [1-10]:** YOUR ANSWER HERE
+- **Length of Assignment (# Hours):** 3 (would have been 1 but debug took me longer than it should have)
+- **Quality of Instructions [1-10]:** 8 (Very clear, I just would have liked a mention of how to debug with your datatypes)
+- **Quality of Visualizer [1-10]:** 6 (It really won't be effective until it gets the QOL fixes mentioned below)
+- **Overall Rating [1-10]:** 7 (A very thorough project - just needs a bit of polish on the visualizer itself)
 
 ### Written Responses
 
@@ -50,7 +50,9 @@ YOUR ANSWER HERE
 
 What are your overall thoughts on the assignment? Did it help you learn? If so, in what ways was the assignment helpful? Was the visualizer a useful tool? If so, in what ways was it useful?
 
-YOUR ANSWER HERE
+This assignment was helpful to visualize the algorithms, but the visualizer just ran so fast that I didn't have time to trace what was happening.  A speed control argument and maybe an argument allowing you to step through each iteration would help.  Also, a mode to visualize the students' algorithms would be amazing for debugging or even testing out different variations on these algorithms.  Most of what I learned was Python syntax stuff - Python doesn't error where I think it would, so debugging just took a bit longer for me because of minor syntactic problems.  I've used python a bit before, but always for graphing or web server coding, never for algorithms.
+
+I'm also a bit confused on why BFS had a destination square and DFS did not.  Could you maybe mention why that is in the instructions?
 
 **Question 2:**
 
@@ -62,3 +64,5 @@ over its speed.  Also, it would be nice to just have a button to reset it instea
 I'm surprised that the visualizer doesn't show us how our changes effect the algorithm when it runs.  I had a mistake in my dfs algorithm and it kept telling
 me I had a mistake, but the visualizer seemed to be working fine so I was confused until I saw that the visualizer would run fine no matter what.  I think
 the visualizer should respond to whatever changes people make to their algorithms.
+
+Also, I found myself having an error which just said "returned list type is incorrect" and I actually wasn't sure how to start debugging that.  I looked at the visualizer.py to help myself debug - just make sure that either the source visualizer.py is available, or people are given a guide on what the error messages mean, and a way to do debug prints on your datatypes.
