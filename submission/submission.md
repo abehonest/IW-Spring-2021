@@ -33,7 +33,7 @@ your general search (it would just ping off down some small passage and forget a
 
 Depth-first search can also be implemented non-recursively, in a manner very similar to your implementation of breadth-first search. What change would have to be made to implement DFS in this way?
 
-YOUR ANSWER HERE
+It would be similar to the BFS solution but since DFS searches on the most recently seen node, I would use a stack instead of a queue to load the nodes into the algorithm (haven't tested this, just my basic guess)
 
 ## Assignment Evaluation
 
